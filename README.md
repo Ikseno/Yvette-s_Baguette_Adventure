@@ -22,13 +22,19 @@ fonction récursive.
   4. Implémentez votre/vos fonction(s) récursive(s) qui affiche(nt) l’histoire l’arbre en tenant compte des choix faits par le joueur.
   
   5. Rédigez un livrable dans lequel vous mettrez :
+    
     * Une page de garde avec au minimum :
       o le titre du projet,
       o vos noms, prénoms
       o le nom du chef de projet (chargé de la planification, partage et suivi des tâches à chaque séance)
+    
     * Le sommaire
+    
     * Votre planning de travail avec : qui fait quoi ? Combien de temps de temps passé sur chaque tâche ?
+    
     * Votre arbre papier avec les réponses aux questions présentées en 1.
+    
     * Les difficultés rencontrées et le bilan (par exemple : cohésion du groupe / intervention du chef de projet / difficulté
       technique / compétences acquises…)
+    
     * Les tests effectués pour gérer les éventuelles erreurs saisies par le joueur
