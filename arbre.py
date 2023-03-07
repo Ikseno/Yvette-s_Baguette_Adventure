@@ -27,6 +27,12 @@ class Arbre_bin:
     def set_texte(self, texte = ""):
         self.texte = texte
     
+    def get_texte(self):
+        return self.texte
+    
+    def get_texte_choix(self):
+        return self.texte_choix
+
     def get_valeur(self):
         return self.valeur
     
@@ -164,7 +170,8 @@ class Arbre_bin:
         return lignes
 
 def generate_values():
-    node_0 = Arbre_bin(0, 0, "Vous vous dirigez péniblement vers la porte d'entrée, mais avant de sortir, vous jugez préférable de prendre quelque chose ...")
+    node_0 = Arbre_bin(0, 0)
+    node_0.set_texte("Vous vous dirigez péniblement vers la porte d'entrée, mais avant de sortir, vous jugez préférable de prendre quelque chose ...")
     node_0.insert_gauche(1, 0 , "Prendre une canne")
     node_0.insert_droit(2, 0, "Prendre un foulard")
 
@@ -433,11 +440,8 @@ def generate_values():
 
     node_894 = node_446.get_gauche()
     node_894.set_texte("Vous vendez votre troisième sachet de farine, et l'homme qui vous a proposé ce business revient vers vous. Il dit être très impressionné, et vous propose de rejoindre son gang. Vous devenez alors une des plus grande Baronne du trafic de farine en Europe.")
-    
     return node_0
 
-node_0 = generate_values()
-print(node_0)
 
 ##for i in range(64):
 ##    if i%2==0:
