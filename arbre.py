@@ -176,7 +176,7 @@ def generate_values():
     node_0.insert_droit(2, 0, "Prendre un foulard")
 
     node_1 = node_0.get_gauche()
-    node_1.set_texte("Votre bonne vieille canne ! Voila ce qui vous manquait. Votre cardialogue vous en remercie. Après avoir bien fermé la porte, vous avancez dans la Grand'Rue. Cependant, après quelques minutes, vous vous rendez compte que vous êtes à découvert. Décidement, Yvette est très tête en l'air... Alors que vous continuez votre chemin en maudissant le système Capitaliste, vous apercevez un banc. ")
+    node_1.set_texte("Votre bonne vieille canne ! Voila ce qui vous manquait. Votre cardialogue vous en remercie. Après avoir bien fermé la porte, vous avancez dans la Grand'Rue. Cependant, après quelques minutes, vous vous rendez compte que vous êtes à découvert. Décidement, Yvette est très tête en l'air... Alors que vous continuez votre chemin en maudissant le système Capitaliste, vous apercevez un banc.")
     node_1.insert_gauche(3, 0 , "S'asseoir")
     node_1.insert_droit(4, 0, "Continuer")
 
@@ -339,7 +339,7 @@ def generate_values():
     node_54.insert_droit(110, 0, "Continuer à vendre")
 
     node_67 = node_33.get_gauche()
-    node_67.set_texte("Vous fouillez votre sac et sortez un exemplaire du Code de la consommation. Vous feuilletez le large livre jusqu'à trouver l'article L121-11 que vous commencez à lire : Est interdit le fait de refuser à un consommateur la vente d'un produit ou la prestation d'un service... L'homme vous répond : ça va ça va, j'ai compris, je vais vous le vendre votre pain")
+    node_67.set_texte("Vous fouillez votre sac et sortez un exemplaire du Code de la consommation. Vous feuilletez le large livre jusqu'à trouver l'article L121-11 que vous commencez à lire : Est interdit le fait de refuser à un consommateur la vente d'un produit ou la prestation d'un service... L'homme vous répond : ça va ça va, j'ai compris, je vais vous le vendre votre pain.")
     node_67.insert_gauche(135, 2 , "Poursuivre le boulanger en justice")
     node_67.insert_droit(136, 2, "Acheter le pain")
 

@@ -12,7 +12,7 @@ class MainJeu:
     
     def correct_label_size(self,texte,ratio):
         """ratio correspond au rapport taille du label par rapport à la resolution"""
-        police_size = 20
+        police_size = round((20*int(self.master.winfo_width()))/1920)
         test_label = tk.Label(text=texte,font=("Comic Sans MS", police_size, "bold"))
         test_label.pack()
         self.master.update()
@@ -24,6 +24,31 @@ class MainJeu:
             self.master.update()
         test_label.pack_forget()
         return police_size 
+    
+    def saut_ligne_efficace(self,texte,index_g, index_d):
+        """Remet en forme le texte pour : qu'il puisse rentrer dans la fenêtre (s'adapte à la résolution) en rajoutant des sauts de ligne (\n); et qu'il est une taille lisible (min 10). 
+        Cet algorithme récursif fonctionne sur un principe de dichotomie.
+        index_g correspond au pointeur de gauche
+        index_d correspond au pointeur de droite"""
+        size = self.correct_label_size(texte,5/6)
+        if size >=10:
+
+            return texte, size 
+        else:
+            modif_g = False
+            modif_d = False
+            while modif_g == False or modif_d == False:
+                if modif_g == False:
+                    index_g -=1
+                    if (texte[index_g] == "." or texte[index_g] == "!" or texte[index_g] == "?" or texte[index_g] == "," or texte[index_g] == ":" or texte[index_g] == " ")  and texte[index_g+1]!="\"" and texte[index_g+1]!=".":
+                        texte = texte[:index_g+1] + "\n" + texte[index_g+1:]
+                        modif_g=True
+                if modif_d == False:
+                    index_d +=1
+                    if (texte[index_d] == "." or texte[index_d] == "!" or texte[index_d] == "?" or texte[index_d] == "," or texte[index_d] == ":" or texte[index_g] == " ")  and texte[index_d+1]!="\"" and texte[index_d+1]!=".":
+                        texte = texte[:index_d+1] + "\n" + texte[index_d+1:]
+                        modif_d=True
+            return self.saut_ligne_efficace(texte,index_g//2,len(texte[index_d:])//2+index_d)
 
     def create_menu(self):
         self.frame_menu = tk.Frame(self.master)
@@ -58,14 +83,24 @@ class MainJeu:
             self.frame_play=tk.Frame(self.master)
             self.frame_play.pack()
             texte = cur_node.get_texte()
-            label_size = self.correct_label_size(texte,2/3)
-            
-            while label_size <=8:
-                for index in range(len(texte)-1):
-                    if (texte[index] == "." or texte[index] == "!" or texte[index] == "?" or texte[index] == "(")  and texte[index+1]!="\"" and texte[index+1]!=".":
-                        texte = texte[:index+1] + "\n" + texte[index+1:]
-                label_size = self.correct_label_size(texte,2/3)
-
+            label_size = self.correct_label_size(texte,5/6)
+            if label_size<11: # texte trop grand pour rentrer dans la fenêtre, dichotomie en ajoutant un \n au milieu (milieu --> pas le vrai milieu mais un qui est en dehors d'un mot)
+                modif_g = False
+                modif_d = False
+                index_g = len(texte)//2
+                index_d = int(index_g)
+                while modif_g==False and modif_d==False:
+                    if modif_g == False:
+                        index_g -=1
+                        if (texte[index_g] == "." or texte[index_g] == "!" or texte[index_g] == "?" or texte[index_g] == "," or texte[index_g] == ":" or texte[index_g] == " ")  and texte[index_g+1]!="\"" and texte[index_g+1]!=".":
+                            texte = texte[:index_g+1] + "\n" + texte[index_g+1:]
+                            modif_g=True
+                    if modif_d == False:
+                        index_d +=1
+                        if (texte[index_d] == "." or texte[index_d] == "!" or texte[index_d] == "?" or texte[index_d] == "," or texte[index_d] == ":")  and texte[index_d+1]!="\"" and texte[index_d+1]!=".":
+                            texte = texte[:index_d+1] + "\n" + texte[index_d+1:]
+                            modif_d=True 
+                texte,label_size = self.saut_ligne_efficace(texte,index_g//2,len(texte[index_d:])//2+index_d) # nouveau format texte et police optimale  
             self.texte = tk.Label(self.frame_play, text=texte,bg="#253f4b",font=("Comic Sans MS",label_size, "bold"))
             self.texte.pack()
             button_gauche = tk.Button(self.frame_play, text=cur_node.gauche.get_texte_choix(), command=lambda:[self.frame_play.destroy(),self.play(cur_node.get_gauche())])
@@ -76,7 +111,7 @@ class MainJeu:
 
 def main():
     global node
-    node = generate_values()  # génère l'arbre bina
+    node = generate_values()  # génère l'arbre binaire
     root = tk.Tk()
     app = MainJeu(root)
     app.create_menu()
