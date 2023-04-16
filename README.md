@@ -2,4 +2,4 @@
 
 ## Images
 
-![](https://imgur.com/gallery/cq5Jbhh.png?1)
+![](https://imgur.com/a/cq5Jbhh)
