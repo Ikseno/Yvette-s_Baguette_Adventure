@@ -42,7 +42,7 @@ Python doit impérativement être installé.
 Ce programme demande aussi l'installation de la bibliothèque Pillow. Pour l'installer :
 
 ```sh
-pip install Pyllow
+pip install Pillow
 ```
 
 ### Lancement
