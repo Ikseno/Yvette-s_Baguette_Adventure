@@ -11,10 +11,10 @@ Interface choix
 
 ### Mini-jeux
 
-&nbsp; &nbsp; ![](http://i.imgur.com/t5Erph9.gif) 
-&nbsp;&nbsp;&nbsp;&nbsp;  ![](http://i.imgur.com/I3Z2Ubd.gif)
-&nbsp;&nbsp;&nbsp;&nbsp;  ![](http://i.imgur.com/mIM23bu.gif) 
-&nbsp;&nbsp;&nbsp;&nbsp;  ![](http://i.imgur.com/l2i6qvH.gif)
-&nbsp;&nbsp;&nbsp;&nbsp;  ![](http://i.imgur.com/hx5kgpm.gif) 
+Mini-Jeu : ![](http://i.imgur.com/t5Erph9.gif) 
+Mini-Jeu : ![](http://i.imgur.com/I3Z2Ubd.gif)
+Mini-Jeu : ![](http://i.imgur.com/mIM23bu.gif) 
+Mini-Jeu : ![](http://i.imgur.com/l2i6qvH.gif)
+Mini-Jeu : ![](http://i.imgur.com/hx5kgpm.gif) 
 
 
