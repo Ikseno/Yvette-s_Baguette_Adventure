@@ -18,5 +18,5 @@ Interface choix
 
 ![](http://i.imgur.com/l2i6qvH.gif)
 
-![](http://i.imgur.com/nMXo4D8.png?1)
+![](http://i.imgur.com/hx5kgpm.gif)
 
