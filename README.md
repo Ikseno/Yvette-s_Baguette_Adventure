@@ -13,8 +13,8 @@ Interface choix
 
 ![](http://i.imgur.com/t5Erph9.gif) ![](http://i.imgur.com/I3Z2Ubd.gif)
 
-![](http://i.imgur.com/esT9Z0B.gif[/img]) ![](http://i.imgur.com/l2i6qvH.gif)
+![](http://i.imgur.com/esT9Z0B.gif) ![](http://i.imgur.com/l2i6qvH.gif)
 
 ![](http://i.imgur.com/hx5kgpm.gif) 
 
-![](https://imgur.com/I3Z2Ubd.gif)
+![](https://imgur.com/esT9Z0B.gif)
