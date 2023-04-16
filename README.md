@@ -47,7 +47,7 @@ pip install Pyllow
 
 ### Lancement
 
-Il exécuter le fichier main.py soit avec un IDE ou exécuter la commande ci-dessus dans le dossier du jeu :
+Il suffit d'exécuter le fichier main.py soit avec un IDE ou taper dans le cmd la commande ci-dessus (dans le dossier du jeu) :
 
 ```sh
 python3 main.py
