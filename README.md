@@ -17,4 +17,4 @@ Interface choix
 
 ![](http://i.imgur.com/hx5kgpm.gif) 
 
-![](https://imgur.com/I3Z2Ubd)
+![](https://imgur.com/I3Z2Ubd.gif)
