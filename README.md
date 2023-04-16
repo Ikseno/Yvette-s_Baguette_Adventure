@@ -13,7 +13,7 @@ Interface choix
 
 ![](http://i.imgur.com/t5Erph9.gif) ![](http://i.imgur.com/I3Z2Ubd.gif)
 
-![](https://i.imgur.com/esT9Z0B.gif) ![](http://i.imgur.com/l2i6qvH.gif)
+![](http://i.imgur.com/esT9Z0B.gif) ![](http://i.imgur.com/l2i6qvH.gif)
 
 ![](http://i.imgur.com/hx5kgpm.gif)
 
