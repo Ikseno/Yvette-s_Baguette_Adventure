@@ -1,4 +1,4 @@
-![](http://i.imgur.com/xnoJvUU.png?1)
+<img src="http://i.imgur.com/xnoJvUU.png?1" width="700"/>
 
 # Yvette's Baguette Adventure
 
@@ -15,18 +15,36 @@ Samedi 9 h 57 Yvette est debout devant son miroir, elle s'habille pour aller pet
 
 ## Images du jeu
 
-Menu
+### Menu
 ![](http://i.imgur.com/hQe6zcY.png?1)
-Interface choix
+### Interface choix
 ![](http://i.imgur.com/nMXo4D8.png?1)
 
 ### Mini-jeux
+#### Course Poursuite 
+<p align="center">
+  <img src="http://i.imgur.com/t5Erph9.gif" />
+</p>
 
-Course Poursuite-: ![](http://i.imgur.com/t5Erph9.gif) <br />
-Pickpocket-------: ![](http://i.imgur.com/I3Z2Ubd.gif) <br />
-Braquage---------: ![](http://i.imgur.com/mIM23bu.gif) <br />
-Ticket-----------: ![](http://i.imgur.com/l2i6qvH.gif) <br />
-Junkies----------: ![](http://i.imgur.com/hx5kgpm.gif) <br />
+#### Pickpocket 
+<p align="center">
+  <img src="http://i.imgur.com/I3Z2Ubd.gif" />
+</p>
+
+#### Braquage 
+<p align="center">
+  <img src="http://i.imgur.com/mIM23bu.gif" />
+</p>
+
+#### Ticket 
+<p align="center">
+  <img src="http://i.imgur.com/l2i6qvH.gif" />
+</p>
+
+#### Junkies 
+<p align="center">
+  <img src="http://i.imgur.com/hx5kgpm.gif" />
+</p>
 
 ## Installation
 
